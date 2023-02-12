@@ -1,0 +1,260 @@
+
+Assignment 2:
+
+1. Write a program to accept percentage from the user and display the grade according to following criteria :
+
+      Marks        	Grade
+   
+       >90         	 A
+    >80 and <=90         B
+   >=60 and <=80         C
+    below 60             D
+
+Ans: 
+  
+print("Please enter the percentage to know your grade :")
+
+percentage = int(input())
+
+if percentage>90:
+    print('A')
+
+elif percentage >80 and percentage<=90:
+      print ('B')
+
+elif percentage >=60 and percentage<=80:
+      print ('C')
+
+elif percentage <=60:
+      print ('D')
+
+
+2. Write a program to accept the cost price of a bike and display the road tax to be paid according to the following criteria :
+
+    Tax                        	Cost Price(in Rs)
+    15%                          >100000
+    10%                          >50000 and <=100000
+     5%                          <=50000
+
+Ans :
+
+print('Enter Cost Price(in Rs) of the bike to know your Road Tax')
+
+cost_price=int(input())
+
+if cost_price >100000:
+        tax=(cost_price*0.15)
+        print(f"Road Tax is Rs.",tax)
+
+elif cost_price >50000 and cost_price<=100000:
+        tax=(cost_price*0.10)
+        print("Road Tax is Rs.{}".format(tax))
+
+elif cost_price <=50000:
+        tax=(cost_price*0.05)
+        print("Road Tax is Rs.{road_tax}".format(road_tax=tax))
+
+
+3. Accept any city from the user and display monuments of that city.
+
+	City 	              	Monument
+	Delhi               	Red Fort
+	Agra			Taj Mahal
+	Jaipur			Jal Mahal
+
+Ans:
+
+print("Enter your City Name to known the famous monument")
+
+city=str(input())
+
+if city.lower()=='delhi' or city.upper()=='DELHI' or city.capitalize()=='Delhi':
+
+	print("The famous monument is Red Fort")
+
+elif city.lower()=='agra' or city.upper()=='AGRA' or city.capitalize()=='Agra':
+
+	print("The famous monument is Taj Mahal")
+
+elif city.lower()=='jaipur' or city.upper=='JAIPUR' or city.capitalize()=='Jaipur':
+
+	print('The famous monument is Jal Mahal')
+ 																
+
+
+4. Check how many times a given number can be divided by 3 before it is less than or equal to 10.
+
+Ans :
+
+
+print("Enter a Number")
+a=int(input())
+
+count=0
+i=1
+
+
+for i in range(1,a+1):
+        if(i<=10):
+                if i%3==0:
+                        count=count+1
+
+
+print("Number of Times {} is divisibe by 3 before it is less than or equal to 10 is {}".format(a,count))
+
+
+5. Why and When to Use while Loop in Python give a detailed description with example. 
+
+A While Loop is used to repeat specific block of code an unknown number of times, until a condition is met.
+
+x='pwskills'
+j = 1
+while j > 0:
+    for i in x:
+        print(j ,i)
+        j = j + 1
+    if i == 's':
+        break
+
+
+6. Use nested while loop to print 3 different pattern.
+
+Ans : 
+
+a.
+
+    *
+   ***
+  *****
+ *******
+
+print("Enter num")
+
+num= int(input())
+
+row=1
+while row <num:
+
+    space=num-row
+    while space > 0:
+        print(" ",end="")
+        space=space-1
+    star=2*row-1
+    while star>0:
+        print("*",end="")
+        star=star-1
+    print("")
+    row=row+1	
+ 
+
+b. 
+   
+ *******
+  *****
+   ***
+    *
+     
+    *
+   ***
+  *****
+ *******
+
+
+print("Enter num")
+
+num= int(input())
+
+row=1
+
+row=num-1
+
+while row >0:
+    space=num-row
+    while space > 0:
+        print(" ",end="")
+        space=space-1
+    star=2*row-1
+    while star>0:
+        print("*",end="")
+        star=star-1
+    print("")
+    row=row-1
+
+while row <num:
+
+    space=num-row
+    while space > 0:
+        print(" ",end="")
+        space=space-1
+    star=2*row-1
+    while star>0:
+        print("*",end="")
+        star=star-1
+    print("")
+    row=row+1	
+    
+
+c. 
+
+
+    *
+   ***
+  *****
+ *******
+ *******
+  *****
+   ***
+    *
+
+
+print("Enter num")
+
+num= int(input())
+
+row=1
+while row <num:
+
+    space=num-row
+    while space > 0:
+        print(" ",end="")
+        space=space-1
+    star=2*row-1
+    while star>0:
+        print("*",end="")
+        star=star-1
+    print("")
+    row=row+1	
+
+row=num-1
+
+while row >0:
+    space=num-row
+    while space > 0:
+        print(" ",end="")
+        space=space-1
+    star=2*row-1
+    while star>0:
+        print("*",end="")
+        star=star-1
+    print("")
+    row=row-1
+
+7. Reverse a while loop to display numbers from 10 to 1.
+
+Ans :
+
+n=10
+
+while n >=1:
+    print(n)
+    n=n-1
+
+8. Reverse a while loop to display numbers from 10 to 1.
+
+Ans :
+
+n=10
+
+while n >=1:
+    print(n)
+    n=n-1
